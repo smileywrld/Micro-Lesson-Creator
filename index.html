@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro-Lesson Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Create a Micro-Lesson</h1>
+
+  <div>
+    <label>Lesson Title:</label>
+    <input type="text" id="title" placeholder="e.g. How to Dribble a Ball">
+  </div>
+
+  <div>
+    <label>Lesson Text:</label>
+    <textarea id="content" placeholder="Write your 5-minute lesson here..."></textarea>
+  </div>
+
+  <div>
+    <label>Video Link (optional):</label>
+    <input type="text" id="video" placeholder="e.g. youtube.com/watch?v=abc123">
+  </div>
+
+  <div>
+    <label>Quiz Question:</label>
+    <input type="text" id="quiz" placeholder="e.g. What’s the first step?">
+  </div>
+
+  <button onclick="saveLesson()">Save Lesson</button>
+
+  <h2>Your Lessons</h2>
+  <div id="lessonList"></div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
